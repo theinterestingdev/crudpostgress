@@ -1,9 +1,9 @@
 import React from 'react'
 import ListTable from './ListTable'
 import { Box } from '@mui/material'
-import AddButton from './AddButton'
 
-const List = ({setSingleEmp}) => {
+
+const List = ({employees,setSingleEmp,setEmployees}) => {
   return (
     <Box style={{
         marginTop:"6%",
@@ -11,8 +11,8 @@ const List = ({setSingleEmp}) => {
         marginRight:"5%",
         width:"90%",
     }}>
-    <AddButton></AddButton>
-    <ListTable setSingleEmp={setSingleEmp}/>
+    
+    <ListTable setSingleEmp={setSingleEmp} employees={employees} setEmployees={setEmployees}/>
     </Box>
   )
 }

@@ -1,4 +1,4 @@
-import pool from "./database/db.js";
+const pool  = require("./api/database/db.js");
 
 const testConnection  = async ()=>{
     try{
